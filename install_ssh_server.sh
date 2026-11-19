@@ -34,9 +34,8 @@ echo "PasswordAuthentication yes" | sudo tee -a /etc/ssh/sshd_config
 echo "PubkeyAuthentication yes" | sudo tee -a /etc/ssh/sshd_config
 
 echo "Restarting SSH service..."
-sudo service ssh restart
-
-echo "SSH Server configured successfully with password authentication!"
 sudo mkdir -p /run/sshd
 sudo ssh-keygen -A
 sudo /usr/sbin/sshd
+
+echo "SSH Server configured successfully with password authentication!"
