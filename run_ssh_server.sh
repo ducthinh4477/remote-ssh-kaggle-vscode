@@ -1,2 +1,2 @@
 #!/bin/bash#
-ngrok tcp 22 --log=stdout --log-level=warn
+ngrok tcp 22 --region ap
